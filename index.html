@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <button id='openModalButton'>Открыть модальное окно</button>
+    <div id='modal' class='modal'>
+        <div class='modal-content'>
+            <button id='closeModalButton' class='modal-close'>X</button>
+            <h1>Авторизация</h1>
+            <form id='loginForm' action="">
+                <label id='labelName' for="login">Имя</label>
+                <input type="text" name="login" required>
+
+                <label for="">Пароль</label>
+                <div class="show-password">
+
+                    <input id='show-password-input' type="password" name="password" required>
+                    <input type="button" id='button-show-password' class="button-show-password" value='Показать пароль'>
+                </div>
+                <span id="password-error" style="color: red"></span>
+                <button type="submit">Войти</button>
+            </form>
+        </div>
+    </div>
+
+    <button id='openRegModalButton'>Зарегистрироваться</button>
+    <div id='modalReg' class='modal'>
+        <div class='modal-content'>
+            <button id='closeRegModalButton' class='modal-close'>X</button>
+            <h1>Регистрация</h1>
+            <form id='loginRegForm' action="">
+                <label id='labelRegName' for="loginReg">Имя</label>
+                <input type="text" name="loginReg" required>
+
+                <label for="">Пароль</label>
+                <div class="show-password">
+
+                    <input id='show-reg-password-input' type="password" name="passwordReg" required>
+                    <input type="button" id='button-reg-show-password' class="button-show-password"
+                        value='Показать пароль'>
+                </div>
+                <label for="">Подтвердите пароль</label>
+                <div class="show-password">
+
+                    <input id='confirm-password-input' type="password" name="confirmPassword" required>
+
+                </div>
+                <span id="password-reg-error" style="color: red"></span>
+                <button type="submit">Зарегистрироваться</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
